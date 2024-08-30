@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+    /* cor de fundo da página */
+    color: white;
+    /* cor da fonte geral */
+    margin: 0;
+    padding: 0;
+}
+/* estilização geral da página */
+
+.navbar {
+    width: auto ;
+    /* largura da navbar */
+    padding: 2%;
+    background-color: rgb(250, 10, 10); 
+    /* cor de fundo da navbar*/
+    border-radius:0 0 10px 10px;
+}
+/* estilização da navbar(barra de navegação) */
+
+.list {
+    display: flex;
+    /* definindo orientação dos itens dentro da list */
+    justify-content: start;
+    /* definindo onde vai ser exibido */
+    list-style-type: none;
+
+}

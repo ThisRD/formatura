@@ -30,17 +30,26 @@ body {
 
 li {
     margin-right: 20px;
+    /* sepaqração entre os itens da list */
 }
 
 a {
     text-decoration: none;
+    /* removendo decorações do texto */
     color: white;
+    /* definindo cor da fonte do texto */
     width: 25px;
+    /* largura do elemento */
 
 }
 
 a:hover{
+    /* interação com o cursor  */
     background-color: #ff3737;
+    /* definiindo cor de fundo */
     width: 25px;
+    /* largura do elemento */
     border-radius: 10px;
+    /* arredondando bora do elemento */
 }
+

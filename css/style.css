@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
 body {
     background-color: white;
     /* cor de fundo da página */
+    font-family: "SUSE", sans-serif;
+    /* defininfo fonte geral para a pagina */
     color: white;
     /* cor da fonte geral */
     margin: 0;
@@ -9,8 +13,9 @@ body {
 /* estilização geral da página */
 
 .navbar {
-    width: auto ;
+    width: auto;
     /* largura da navbar */
+    align-items: center;
     padding: 2%;
     background-color: rgb(250, 10, 10); 
     /* cor de fundo da navbar*/
@@ -21,35 +26,211 @@ body {
 .list {
     display: flex;
     /* definindo orientação dos itens dentro da list */
-    justify-content: start;
+    justify-content: flex-start;
     /* definindo onde vai ser exibido */
     list-style-type: none;
+    height: 50px;
+    align-items: center;
 
 }
-
+/* estilização da lista do menu */
 
 li {
-    margin-right: 20px;
+    margin-right: 30px;
+    /* espaço na direita  */
+    width: 100px;
+    /* largura */
+    text-align: center;
     /* sepaqração entre os itens da list */
 }
+/* estilização geral dos itens do menu */
+
+li:hover {
+    /* ao pairar o cursor */
+    padding: 10px 10px 10px 10px;
+    background-color: #ff3737;
+    /* cor de fundo */
+    border-radius: 5px;
+    /* arredondando borda */
+
+}
+/* estilização da ação com o cursor */
 
 a {
     text-decoration: none;
     /* removendo decorações do texto */
     color: white;
     /* definindo cor da fonte do texto */
-    width: 25px;
-    /* largura do elemento */
+}
+/* estilização geral da ancora do item(li) */
+
+.cabecalho {
+    text-align: center;
+    /* alinhando texto no centro */
+    margin: 50px 0 50px 0;
+    /* dando espaço entre o cabeçalho e o conteudo principal */
+    color: rgb(250, 10, 10); 
+    /* definindo cor da fonte  */
+}
+/* estilização do cabeçalho do conteudo */
+
+.parts{
+    background-color: rgb(250, 10, 10); 
+    /* alterando cor de fundo */
+    height: 300px;
+    /* definindo altura */
+    display: flex;
+    /* deixando os elementos da section flexiveis */
+    justify-content: space-evenly;
+    /* orientando para todos ocuparem o mesmo espaço dentro da section */
 
 }
+/* estilização de todas as sections */
 
-a:hover{
-    /* interação com o cursor  */
-    background-color: #ff3737;
-    /* definiindo cor de fundo */
-    width: 25px;
-    /* largura do elemento */
-    border-radius: 10px;
-    /* arredondando bora do elemento */
+img{
+    align-items: center;
+    min-width: 70px;
+    max-width: 500px;
+    border-radius: 30px;
 }
 
+#part1 {
+    margin: 0 50px 50px 0;
+    /* dando espaço no lado direito */
+    border-radius: 0 2% 250px 0;
+    /* arrodondando as bordas da section */
+}
+/* estilização da primeira section */
+
+#part2{
+    margin: 0 0 50px 50px;
+    /* dando espaço no lado esquerdo */
+    border-radius: 250px 0 0 2%;
+    /* arredondando as bordas da section */
+}
+/* estilização da segunda section */
+
+#part3 {
+    border-radius: 30px;
+    /* arredondando as bordas */
+    padding: 30px 0 30px 0;
+    /* espaçamento interno nos elementos */
+}
+/* estilização da terceira section */
+
+.container {
+    width: 100%;
+    /* dimensionando a largura da div */
+    min-width: 820px;
+    /* definindo largura minima */
+    height: 340px;
+    /* altura da div */
+    display: flex;
+    /* deixando os elementos da div frexiveis */
+    justify-content: center;
+    /* alinhando os elemnetos ao centro da div */
+    gap: 10px;
+    /* espaçamento dos elementos */
+}
+/* estilização da div principal */
+
+
+.card {
+    min-width: 70px;
+    /* largura minima */
+    max-width: 500px;
+    /* largura maxima */
+    height: 260px;
+    /* altura dos cards */
+    border-radius: 30px;
+    /* arredondando bordas */
+    display: flex;
+    /* deixando elementos flexiveis */
+    align-items: flex-start;
+    /* alinhando os itens VERTIVALMENTE ao inicio de forma flexivel */
+    margin: 0px 0 30px 0;
+    /* espaçamento em baixo */
+    transition: flex-grow 0.5s ease;
+    /* definindo tempo e tipo de transição do elemnto */
+}
+/* estilização dos cards mais acima */
+
+#card2{
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipMfwlYOx8Jc9QaGM9Z2a89IGs1Zdrg2lY7Dm-ZW=s680-w680-h510);
+    /* definindo imagem como plano de fundo */
+}
+/* definição do background */
+
+.card:hover {
+    /* ao pairar do cursor */
+    width: 900px;
+    /* largura */
+    background-repeat: no-repeat;
+    /* não repetir o background aotumaticamente */
+    background-size: cover;
+    /* dimensionando o tamanho do background */
+}
+/* estilização para quando pairar sob o cursor */
+
+.cards {
+    min-width: 70px;
+    /* largura minima */
+    max-width: 500px;
+    /* largura maxima */
+    height: 260px;
+    /* altura */
+    border-radius: 30px;
+    /* arredondando bordas */
+    display: flex;
+    /* deixando elementos flexiveis */
+    align-items: flex-start;
+    /* alinhando elementos VERTICALMENTE ao inicio de forma flexivel */
+    margin: 50px 0 0 0;
+    /* espaçamento encima */
+    transition: flex-grow 0.5s ease;
+    /* definindo tempo e tipo de transição do elemento */
+}
+/* estilização dos cards mais abaixo */
+
+#card1{
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipP4tMUGzzQBpWytJASZsAxElmhtTQ2SgzH3ECkr=s680-w680-h510);
+    /* definindo imagem como background */
+}
+/* definindo background do card */
+
+.cards:hover {
+    /* ao pairar sob o sursor */
+    width: 900px;
+    /* largura */
+    background-repeat: no-repeat;
+    /* não repetir background automaticamente*/
+    background-size: cover;
+    /* dimensionar o tamanho do background  */
+}
+/* estilização do pairar sob cursor */
+
+;.card-content{
+    height: 260px;
+    display: flex;
+    align-items: end;
+}
+
+.card-content > .title {
+    /* div do texto do card */
+    margin-left: 10px;
+    /* espaçamendo a esquerda */
+    translate: 0 100%;
+    opacity: 0;
+    /* definindo opacidade */
+}
+/* estilização da div do texto dentro do card */
+
+.card:hover .title {   
+    opacity: 1;
+    translate: 0 0;
+}
+
+.cards:hover .title {
+    opacity: 1;
+    translate: 0 0; 
+}

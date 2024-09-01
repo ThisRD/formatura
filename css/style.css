@@ -20,6 +20,7 @@ body {
     background-color: rgb(250, 10, 10); 
     /* cor de fundo da navbar*/
     border-radius:0 0 10px 10px;
+    /* arredondando bordas */
 }
 /* estilização da navbar(barra de navegação) */
 
@@ -40,14 +41,18 @@ li {
     /* espaço na direita  */
     width: 100px;
     /* largura */
+    height: 30px;
     text-align: center;
     /* sepaqração entre os itens da list */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* estilização geral dos itens do menu */
 
 li:hover {
+
     /* ao pairar o cursor */
-    padding: 10px 10px 10px 10px;
     background-color: #ff3737;
     /* cor de fundo */
     border-radius: 5px;
@@ -71,52 +76,74 @@ a {
     /* dando espaço entre o cabeçalho e o conteudo principal */
     color: rgb(250, 10, 10); 
     /* definindo cor da fonte  */
+    text-shadow: 2px 2px 2px #888;
+    /* definindo sombra nos textos */
 }
 /* estilização do cabeçalho do conteudo */
 
 .parts{
     background-color: rgb(250, 10, 10); 
     /* alterando cor de fundo */
-    height: 300px;
+    height: 340px;
     /* definindo altura */
     display: flex;
     /* deixando os elementos da section flexiveis */
     justify-content: space-evenly;
     /* orientando para todos ocuparem o mesmo espaço dentro da section */
-
 }
 /* estilização de todas as sections */
 
-img{
-    align-items: center;
+.img2{
     min-width: 70px;
+    /* largura minima */
+    width: 500px;
     max-width: 500px;
-    border-radius: 30px;
+    /* largura maxima */
+    height: 320px;
+    border-radius: 30px 20px 30px 20px;
+    /* arredondando bordas */
+    background-image: url(https://ideogram.ai/assets/progressive-image/balanced/response/CNwn-1-XQB-jsRxnI4Xtog);
+    /* deifindo imagem como background */
+    background-repeat: no-repeat;
+    /* impedinto repetição automatica do background */
+    background-size: cover;
+    /* dimensionando background */
+    background-position: center center;
+    /* posicionando background */
+    box-shadow: 5px 5px 10px #770707;
+    /* definindo sombra do elemento */
 }
+/* estilização da segunda imabgem */
 
 #part1 {
     margin: 0 50px 50px 0;
     /* dando espaço no lado direito */
-    border-radius: 0 2% 250px 0;
+    border-radius: 0 250px 250px 0;
     /* arrodondando as bordas da section */
 }
 /* estilização da primeira section */
 
 #part2{
+    padding: 20px 0% 0 0;
+    /* espaçamento interno da segunda section */
     margin: 0 0 50px 50px;
     /* dando espaço no lado esquerdo */
-    border-radius: 250px 0 0 2%;
+    border-radius: 250px 0 0 250px;
     /* arredondando as bordas da section */
 }
 /* estilização da segunda section */
 
 #part3 {
-    border-radius: 30px;
+    border-radius: 10px 10px 0 0;
     /* arredondando as bordas */
     padding: 30px 0 30px 0;
     /* espaçamento interno nos elementos */
 }
 /* estilização da terceira section */
+
+.meio{
+    text-align: center;
+}
 
 .container {
     width: 100%;
@@ -151,7 +178,10 @@ img{
     margin: 0px 0 30px 0;
     /* espaçamento em baixo */
     transition: flex-grow 0.5s ease;
-    /* definindo tempo e tipo de transição do elemnto */
+    /* definindo tempo e tipo de transição do elemento */
+    box-shadow: 5px 5px 10px #770707;
+    /* definindo sombra do elemento */
+
 }
 /* estilização dos cards mais acima */
 
@@ -159,7 +189,25 @@ img{
     background-image: url(https://lh3.googleusercontent.com/p/AF1QipMfwlYOx8Jc9QaGM9Z2a89IGs1Zdrg2lY7Dm-ZW=s680-w680-h510);
     /* definindo imagem como plano de fundo */
 }
-/* definição do background */
+/* definição do background do card2 */
+
+#card4{
+    background-color: white;
+    /* definindo cor de fundo */
+}
+/* definindo backgroun do card4*/
+
+#card6{
+    background-color: white;
+    /* definindo cor de fundo */
+}
+/* definindo background do card6 */
+
+#card8{
+    background-color: white;
+    /* definindo cor de fundo */
+}
+/* definindo background do card8 */
 
 .card:hover {
     /* ao pairar do cursor */
@@ -169,6 +217,9 @@ img{
     /* não repetir o background aotumaticamente */
     background-size: cover;
     /* dimensionando o tamanho do background */
+    box-shadow: 5px 5px 10px #770707;
+    /* definindo sombra do elemento */
+    
 }
 /* estilização para quando pairar sob o cursor */
 
@@ -189,6 +240,9 @@ img{
     /* espaçamento encima */
     transition: flex-grow 0.5s ease;
     /* definindo tempo e tipo de transição do elemento */
+    box-shadow: 5px 5px 10px #770707;
+    /* definindo sombra do elemento */
+
 }
 /* estilização dos cards mais abaixo */
 
@@ -196,7 +250,25 @@ img{
     background-image: url(https://lh3.googleusercontent.com/p/AF1QipP4tMUGzzQBpWytJASZsAxElmhtTQ2SgzH3ECkr=s680-w680-h510);
     /* definindo imagem como background */
 }
-/* definindo background do card */
+/* definindo background do card1 */
+
+#card3{
+    background-color: white;
+    /* definindo cor de fundo */
+}
+/* definindo backgroundo do card3 */
+
+#card5{
+    background-color: white;
+    /* definindo cor de fundo */
+}
+/* defininfo background do card5 */
+
+#card7{
+    background-color: white;
+    /* definindo cor de fundo */
+}
+/* definindo background do card7 */
 
 .cards:hover {
     /* ao pairar sob o sursor */
@@ -205,15 +277,23 @@ img{
     background-repeat: no-repeat;
     /* não repetir background automaticamente*/
     background-size: cover;
-    /* dimensionar o tamanho do background  */
+    /* dimensionar o tamanho do background */
+    box-shadow: 5px 5px 10px #770707;
+    /* definindo sombra do elemento */
+    
 }
 /* estilização do pairar sob cursor */
 
-;.card-content{
-    height: 260px;
+.card-content{
+    height: 220px;
+    /* altura da div do titulo */
     display: flex;
+    /* tornando titulo flexivel */
     align-items: end;
+    /* colocando titulo no fim da div */
+    
 }
+/* estilização da div do titulo dos cards */
 
 .card-content > .title {
     /* div do texto do card */
@@ -223,14 +303,20 @@ img{
     opacity: 0;
     /* definindo opacidade */
 }
-/* estilização da div do texto dentro do card */
+/* estilização do titulo dentro do card */
 
-.card:hover .title {   
+.card:hover .title {
+    /* pairar do titulo do card */
     opacity: 1;
+    /* opacidade */
     translate: 0 0;
 }
+/* estilização do pairar do titulo dos card mais acima */
 
 .cards:hover .title {
+    /* pairar do titulo do card */
     opacity: 1;
+    /* opacidade */
     translate: 0 0; 
 }
+/* estilização do pairar do titulo dos cards mais abaixo */

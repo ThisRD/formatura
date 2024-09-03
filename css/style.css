@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
 body {
-    background-color: white;
+    background-color: #222;
     /* cor de fundo da página */
     font-family: "SUSE", sans-serif;
     /* defininfo fonte geral para a pagina */
@@ -17,10 +17,11 @@ body {
     /* largura da navbar */
     align-items: center;
     padding: 2%;
-    background-color: rgb(250, 10, 10); 
+    background-color: #333; 
     /* cor de fundo da navbar*/
     border-radius:0 0 10px 10px;
     /* arredondando bordas */
+    border-bottom: 5px solid rgb(250, 10, 10);
 }
 /* estilização da navbar(barra de navegação) */
 
@@ -30,6 +31,7 @@ body {
     justify-content: flex-start;
     /* definindo onde vai ser exibido */
     list-style-type: none;
+    /* retirando estilo e decoração da ul */
     height: 50px;
     align-items: center;
 
@@ -45,6 +47,7 @@ li {
     text-align: center;
     /* sepaqração entre os itens da list */
     display: flex;
+    /*  */
     justify-content: center;
     align-items: center;
 }
@@ -53,10 +56,11 @@ li {
 li:hover {
 
     /* ao pairar o cursor */
-    background-color: #ff3737;
+    background-color: #555;
     /* cor de fundo */
     border-radius: 5px;
     /* arredondando borda */
+    box-shadow: 5px 5px 10px rgb(250, 10, 10) ;
 
 }
 /* estilização da ação com o cursor */
@@ -82,7 +86,7 @@ a {
 /* estilização do cabeçalho do conteudo */
 
 .parts{
-    background-color: rgb(250, 10, 10); 
+    background-color: #333;
     /* alterando cor de fundo */
     height: 340px;
     /* definindo altura */
@@ -110,7 +114,7 @@ a {
     /* dimensionando background */
     background-position: center center;
     /* posicionando background */
-    box-shadow: 5px 5px 10px #770707;
+    box-shadow: 5px 5px 10px rgb(250, 10, 10);
     /* definindo sombra do elemento */
 }
 /* estilização da segunda imabgem */
@@ -161,7 +165,6 @@ a {
 }
 /* estilização da div principal */
 
-
 .card {
     min-width: 70px;
     /* largura minima */
@@ -177,10 +180,11 @@ a {
     /* alinhando os itens VERTIVALMENTE ao inicio de forma flexivel */
     margin: 0px 0 30px 0;
     /* espaçamento em baixo */
-    transition: flex-grow 0.5s ease;
     /* definindo tempo e tipo de transição do elemento */
-    box-shadow: 5px 5px 10px #770707;
+    box-shadow: 5px 5px 10px rgb(250, 10, 10);
     /* definindo sombra do elemento */
+    transition-duration: 2s;
+    transition-property: all;
 
 }
 /* estilização dos cards mais acima */
@@ -188,6 +192,7 @@ a {
 #card2{
     background-image: url(https://lh3.googleusercontent.com/p/AF1QipMfwlYOx8Jc9QaGM9Z2a89IGs1Zdrg2lY7Dm-ZW=s680-w680-h510);
     /* definindo imagem como plano de fundo */
+
 }
 /* definição do background do card2 */
 
@@ -211,13 +216,13 @@ a {
 
 .card:hover {
     /* ao pairar do cursor */
-    width: 900px;
+    width: 100%;
     /* largura */
     background-repeat: no-repeat;
     /* não repetir o background aotumaticamente */
     background-size: cover;
     /* dimensionando o tamanho do background */
-    box-shadow: 5px 5px 10px #770707;
+    box-shadow: 5px 5px 10px rgb(250, 10, 10);
     /* definindo sombra do elemento */
     
 }
@@ -238,10 +243,11 @@ a {
     /* alinhando elementos VERTICALMENTE ao inicio de forma flexivel */
     margin: 50px 0 0 0;
     /* espaçamento encima */
-    transition: flex-grow 0.5s ease;
+    transition: 2s ease-in-out;
     /* definindo tempo e tipo de transição do elemento */
-    box-shadow: 5px 5px 10px #770707;
+    box-shadow: 5px 5px 10px rgb(250, 10, 10);
     /* definindo sombra do elemento */
+    transition-duration: 2s;
 
 }
 /* estilização dos cards mais abaixo */
@@ -272,13 +278,13 @@ a {
 
 .cards:hover {
     /* ao pairar sob o sursor */
-    width: 900px;
+    width: 100%;
     /* largura */
     background-repeat: no-repeat;
     /* não repetir background automaticamente*/
     background-size: cover;
     /* dimensionar o tamanho do background */
-    box-shadow: 5px 5px 10px #770707;
+    box-shadow: 5px 5px 10px rgb(250, 10, 10);
     /* definindo sombra do elemento */
     
 }
